@@ -1,5 +1,8 @@
 # AB Testing Rails
 
+## Brief Inroduction
+If you are not yet familiarized with the A/B tests, let me help you to understand this topic in a simple way. While unit, integration, or acceptance tests ensure that your application behaves as you expect it, A/B tests help you to choose which version of the element in your application works better. This application have multiple views against a single route and you will be able to judge which view is performing better and putting better impact on community. This is purely build in Ruby on Rails. Views content are just to help you understand how to display random pages to random users.
+
 ## Installation Guide
 
 - Install Ruby Version 3.1.0
