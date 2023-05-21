@@ -1,26 +1,39 @@
-# ab-testing-rails
+# AB Testing Rails
 
-# README
+## Installation Guide
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+- Ruby Version 3.1.0
+- Rails Version 7.0.4.3
+- Redis
+-
 
-Things you may want to cover:
+#### Native Ruby Setup
 
-* Ruby version
+1. Install Ruby using the version found in the `.ruby-version` file using a Ruby/language version manager. [Rvm](https://rvm.io/rvm/install) is recommended.
+2. Install Gem dependencies:
+   * `bundle install`
 
-* System dependencies
+#### Native Environment
 
-* Configuration
+This project uses [figaro](https://github.com/laserlemon/figaro) to manage environment variables for local development. To initialize this:
 
-* Database creation
+- create the file name application.yml into your main rails folder `touch config/application.yml`
+- Copy application.yml.example to application.yml `cp config/application.yml.example config/application.yml`
 
-* Database initialization
+Please look at the username and password in application.yml.example file to authenticate split dashboard. You can also update these credentials as per your wish.
 
-* How to run the test suite
+#### Native Application Launch
 
-* Services (job queues, cache servers, search engines, etc.)
+`rails server`
 
-* Deployment instructions
 
-* ...
+This will run tests as files are saved. Pressing enter will run all tests.
+
+## Continuous Improvement
+
+There are a couple of areas of our application which will be improved over time. The goal is to address these items as development progresses in different areas of the application. Leave the code in a better state than when you began. This is open source public repository. Anyone can fork and start working.
+
+## Additional Documentation
+
+* Regarding AB Testing
+  * [Split Service](https://github.com/splitrb/split)
