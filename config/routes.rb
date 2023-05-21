@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+
   require 'split/dashboard'
   mount Split::Dashboard, at: 'split'
-  # Defines the root path route ("/")
-  # root "articles#index"
+
+  root to: 'home#index'
+  get '/perform_action' => 'home#perform_action', as: :perform_action
 end

@@ -1,0 +1,7 @@
+<div style='text-align:center;'>
+  <% if @ab_test == 'control' %>
+    <%= render 'control_partial' %>
+  <% else %>
+    <%= render 'variant_partial' %>
+  <% end %>
+</div>
